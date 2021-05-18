@@ -49,7 +49,7 @@ function App() {
   };
 
   // Count Todo
-  const uncompleted = todos.filter((todo) => !todo.completed);
+  const uncompleteder = todos.filter((todo) => !todo.completed);
   return (
     <div>
       <h1>TODO APP</h1>
@@ -57,7 +57,7 @@ function App() {
       <input ref={inputValue} type="text" />
       <button onClick={addTodo}>Add Todo</button>
       <button onClick={clearTodo}>Clear Completed</button>
-      <div>{uncompleted.length} left to do</div>
+      <div>{uncompleteder.length} left to do</div>
     </div>
   );
 }
